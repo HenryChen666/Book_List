@@ -1,0 +1,328 @@
+<!--<p>allbooks works!</p>-->
+<div *ngIf="!selectedBook">
+    <h2></h2>
+  </div>
+<div *ngIf="selectedBook">
+    <h2>Here are details of the Book {{selectedBook.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook.authors">
+      <div class="col-xs-3">Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook.description }}</div>
+    </div>
+  </div>
+
+<!--------------------------Book 2---------------------------------------->
+<div *ngIf="!selectedBook2">
+  <h2></h2>
+</div>
+<div *ngIf="selectedBook2">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook2.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook2.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook2.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook2.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook2.authors">
+      <div class="col-xs-3">Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook2.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook2.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook2.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook2.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook2.description }}</div>
+    </div>
+  </div>
+
+  <!------------------------------Book 3--------------------------------------->
+  <div *ngIf="!selectedBook3">
+    <h2></h2>
+  </div>
+  <div *ngIf="selectedBook3">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook3.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook3.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook3.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook3.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook3.authors">
+      <div class="col-xs-3">Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook3.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook3.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook3.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook3.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook3.description }}</div>
+    </div>
+  </div>
+
+  <!------------------------------Book 4----------------------------------------->
+ 
+  <div *ngIf="!selectedBook4">
+    <h2></h2>
+  </div>
+  <div *ngIf="selectedBook4">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook4.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook4.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook4.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook4.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook4.authors">
+      <div class="col-xs-3">Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook4.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook4.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook4.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook4.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook4.description }}</div>
+    </div>
+  </div>
+ 
+  <!---------------------------Book 5---------------------------------------------->
+
+  <div *ngIf="!selectedBook5">
+    <h2></h2>
+  </div>
+  <div *ngIf="selectedBook5">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook5.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook5.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook5.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook5.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook5.authors">
+      <div class="col-xs-3">Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook5.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook5.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook5.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook5.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook5.description }}</div>
+    </div>
+  </div>
+
+   <!---------------------------Book 6---------------------------------------------->
+   <div *ngIf="!selectedBook6">
+    <h2></h2>
+  </div>
+   <div *ngIf="selectedBook6">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook6.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook6.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook6.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook6.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook6.authors">
+      <div class="col-xs-3" >Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook6.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook6.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook6.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook6.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook6.description }}</div>
+    </div>
+  </div>
+
+ <!---------------------------Book 7---------------------------------------------->
+ <div *ngIf="!selectedBook7">
+    <h2></h2>
+  </div>
+   <div *ngIf="selectedBook7">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook7.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook7.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook7.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook7.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook7.authors">
+      <div class="col-xs-3" >Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook7.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook7.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook7.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook7.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook7.description }}</div>
+    </div>
+  </div>
+
+   <!---------------------------Book 8---------------------------------------------->
+   <div *ngIf="!selectedBook8">
+    <h2></h2>
+  </div>
+   <div *ngIf="selectedBook8">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook8.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook8.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook8.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook8.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook8.authors">
+      <div class="col-xs-3" >Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook8.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook8.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook8.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook8.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook8.description }}</div>
+    </div>
+  </div>
+   <!---------------------------Book 9---------------------------------------------->
+   <div *ngIf="!selectedBook9">
+    <h2></h2>
+  </div>
+   <div *ngIf="selectedBook9">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook9.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook9.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook9.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook9.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook9.authors">
+      <div class="col-xs-3" >Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook9.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook9.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook9.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook9.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook9.description }}</div>
+    </div>
+  </div>
+   <!---------------------------Book 10---------------------------------------------->
+   <div *ngIf="!selectedBook10">
+    <h2></h2>
+  </div>
+   <div *ngIf="selectedBook10">
+    <br><hr>
+    <h2>Here are details of the Book {{selectedBook10.id}}</h2>
+    <div class="row">
+      <div class="col-xs-3">Category:</div>
+      <div class="col-xs-9">{{ selectedBook10.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Title:</div>
+      <div class="col-xs-9">{{ selectedBook10.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Cost:</div>
+      <div class="col-xs-9">{{ selectedBook10.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook10.authors">
+      <div class="col-xs-3" >Author:</div>
+      <div class="col-xs-9"><span [innerHTML]="selectedBook10.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedBook10.year">
+      <div class="col-xs-3">Year:</div>
+      <div class="col-xs-9">{{ selectedBook10.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedBook10.description">
+      <div class="col-xs-3">Description:</div>
+      <div class="col-xs-9">{{ selectedBook10.description }}</div>
+    </div>
+  </div>
